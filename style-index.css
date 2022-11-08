@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --card-title-border-color: #746615;
+  --card-color-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg: url(./assets/bg-yellow.svg);
+}
+
+a {
+  text-decoration: none;
+  color: #f7dd43;
+}
+
+a:hover {
+  color: #e1e1e6;
+  transition: 0.5s;
+}
+
+body.blue {
+  --card-title-border-color: #338af3;
+  --card-color-primary: #338af3;
+  --card-bg-color: #202024;
+}
+
+body.green {
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #121214 var(--bg) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  width: fit-content;
+  margin: auto;
+  padding-top: 52px;
+}
+
+header {
+  margin-bottom: 63px;
+  text-align: center;
+}
+
+#groups {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.group {
+  padding: 32px 23px;
+  text-align: center;
+  background: var(--card-bg-color);
+  border-bottom: 2px solid var(--card-color-primary);
+  border-radius: 6px;
+}
+
+.group h2 {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 16px;
+  border: 1px solid var(--card-title-border-color);
+  border-radius: 6px;
+
+  margin-inline: auto;
+  margin-bottom: 53px;
+
+  color: #f7dd43;
+}
+
+.group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 270px;
+}
+
+.group ul li {
+  display: flex;
+  gap: 20px;
+}
+
+.group ul li + li {
+  padding-top: 24px;
+  border-top: 1px solid #323238;
+}
+
+.group ul li strong {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 160%;
+
+  
+  color: #e1e1e6;
+}
+
+li img{
+  width: 30px;
+}
+
+.group h2,
+.group ul li strong:hover,
+.group ul li img:hover {
+  transform: scale(1.1);
+}
+
+.group h2,
+.group ul li,
+.group ul li img {
+  transition: transform 0.3s;
+}
+
+.group {
+  opacity: 0;
+  animation: appear 3s forwards;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 400px) {
+  #groups {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
