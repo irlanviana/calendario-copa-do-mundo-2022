@@ -5,15 +5,15 @@
 }
 
 :root {
-  --card-title-border-color: #746615;
-  --card-color-primary: #f7dd43;
+  --card-title-border-color: #7b1e3e;
+  --card-color-primary: #7b1e3e;
   --card-bg-color: #1d1c19;
-  --bg: url(./assets/bg-yellow.svg);
+  --bg: url(./assets/bg-logo.svg);
 }
 
 a {
   text-decoration: none;
-  color: #f7dd43;
+  color: #ffff;
 }
 
 a:hover {
@@ -39,6 +39,7 @@ ul {
 
 body {
   background: #121214 var(--bg) no-repeat top center/cover;
+  width: fit-content;
 }
 
 body * {
@@ -52,7 +53,7 @@ body * {
 }
 
 header {
-  margin-bottom: 63px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -110,11 +111,10 @@ header {
   font-size: 25px;
   line-height: 160%;
 
-  
   color: #e1e1e6;
 }
 
-li img{
+li img {
   width: 30px;
 }
 

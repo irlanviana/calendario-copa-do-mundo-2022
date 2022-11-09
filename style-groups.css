@@ -5,15 +5,15 @@
 }
 
 :root{
-  --card-title-border-color: #746615;
-  --card-color-primary: #f7dd43;
+  --card-title-border-color: #7b1e3e;
+  --card-color-primary: #7b1e3e;
   --card-bg-color: #1d1c19;
-  --bg: url(./assets/bg-yellow.svg);
+  --bg: url(./assets/bg-logo.svg);
 }
 
 a{
   text-decoration: none;
-  color: #f7dd43;
+  color: #ffffff;
 }
 
 a:hover{
@@ -85,7 +85,7 @@ header {
   margin-inline: auto;
   margin-bottom: 53px;
 
-  color: #f7dd43;
+  color: #ffffff;
 }
 
 .card h2 span {
