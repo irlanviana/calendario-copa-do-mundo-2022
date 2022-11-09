@@ -11,28 +11,6 @@
   --bg: url(./assets/bg-logo.svg);
 }
 
-a{
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover{
-  color: #e1e1e6;
-  transition: 0.5s;
-}
-
-body.blue{
-  --card-title-border-color: #338af3;
-  --card-color-primary: #338af3;
-  --card-bg-color: #202024;
-}
-
-body.green{
-  --card-title-border-color: #047c3f;
-  --card-color-primary: #047c3f;
-  --card-bg-color: #1a1f1b;
-}
-
 ul {
   list-style: none;
 }
