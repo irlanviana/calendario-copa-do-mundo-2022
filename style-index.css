@@ -114,6 +114,10 @@ header {
   color: #e1e1e6;
 }
 
+header img{
+  height: 180px;
+}
+
 li img {
   width: 30px;
 }

@@ -57,6 +57,10 @@ header {
   text-align: center;
 }
 
+header img{
+  height: 180px;
+}
+
 #cards{
   display: flex;
   flex-direction: column;
