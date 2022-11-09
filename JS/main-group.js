@@ -13,10 +13,11 @@ function createGroup(groupAnchor, group, selections){
   delayGroup = delayGroup + 0.4;
   return `
   <div class="group">
+          <a href="./groups/group-${groupAnchor}.html">
           <h2>
-            <a href="./groups/group-${groupAnchor}.html">${group}</a>
+            ${group}
           </h2>
-
+        </a>
           <ul>
           ${selections}
           </ul>

@@ -13,19 +13,6 @@
 
 a {
   text-decoration: none;
-  color: #ffff;
-}
-
-body.blue {
-  --card-title-border-color: #338af3;
-  --card-color-primary: #338af3;
-  --card-bg-color: #202024;
-}
-
-body.green {
-  --card-title-border-color: #047c3f;
-  --card-color-primary: #047c3f;
-  --card-bg-color: #1a1f1b;
 }
 
 ul {
@@ -80,7 +67,7 @@ header {
   margin-inline: auto;
   margin-bottom: 53px;
 
-  color: #f7dd43;
+  color: #ffffff;
 }
 
 .group ul {
