@@ -1,8 +1,8 @@
-function createGame(player1, hour, player2) {
+function createGame(player1, result, player2) {
   return `
   <li>
               <img src="./../assets/icon=${player1}.svg" alt="Bandeira do ${player1}" />
-              <strong>${hour}</strong>
+              <strong>${result}</strong>
               <img src="./../assets/icon=${player2}.svg" alt="Bandeira da ${player2}" />
             </li>
   `
@@ -27,20 +27,20 @@ document.querySelector("#cards").innerHTML =
       createCard(
           "20/11",
           "domingo",
-          createGame("qatar", "13:00", "ecuador")
+          createGame("qatar", "0 x 2", "ecuador")
         ) +
 
         createCard(
           "21/11",
           "segunda",
-          createGame("senegal", "13:00", "netherlands")
+          createGame("senegal", "0 x 2", "netherlands")
         ) +
 
         createCard(
           "25/11",
           "sexta",
-          createGame("qatar", "10:00", "senegal") +
-          createGame("netherlands", "13:00", "ecuador")
+          createGame("qatar", "1 x 3", "senegal") +
+          createGame("netherlands", "1 x 1", "ecuador")
         ) +
 
         createCard(
